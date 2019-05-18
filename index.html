@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COOK</title>
+    <link rel="stylesheet" href="./css/food.css" type="text/css">
+    <style>
+        .wellcome {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: grey;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .wellcome.active {
+            display: none;
+        }
+
+        .loading {
+            height: 200px;
+            width: 200px;
+            position: relative;
+        }
+
+        .loading::before,
+        .loading::after {
+            content: '';
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: black;
+            animation: loading 2s linear infinite;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .loading::after {
+            animation-delay: 1s;
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0;
+                height: 0;
+                opacity: 1;
+            }
+
+            100% {
+                width: 60px;
+                height: 60px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wellcome" class="wellcome">
+        <div class="loading"></div>
+    </div>
+    <div class="Top-NavBar">
+        <div class="logo"><a href="http://" target="_self">Cooks</a></div>
+        <nav class="navigationBar">
+            <ol class="clearfix">
+                <li><a href="">Home</a></li>
+                <li><a href="">New &amp; Events</a></li>
+                <li><a href="">Short Codes</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Mail Us</a></li>
+            </ol>
+        </nav>
+        <div class="contact clearfix">
+            <a href="">微信</a>
+            <a href="">QQ</a>
+            <a href="">微博</a>
+            <a href="">知乎</a>
+        </div>
+    </div>
+    <div class="banner"></div>
+    <div class="Scrolling-Menu">
+        <div class="title-text">
+            <h1>Sed Ut Perspiciatis Unde Omnis Iste <br>Natus.</h1>
+            <p>Excepteur Sint Occaecat Cupidatat Non Proident</p>
+        </div>
+        <div class="food-list">
+            <div class="images">
+                <div class="food2">
+                    <img src="./img/2.png" alt="食物2">
+                    <h2>Denouncing Pleasure</h2>
+                    <p>Duis aute irure dolor in<br> reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat
+                        nulla <br> pariatur.
+                    </p>
+                </div>
+                <div class="food1">
+                    <img src="./img/1.png" alt="食物1">
+                    <h2>Denouncing Pleasure</h2>
+                    <p>Duis aute irure dolor in<br> reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat
+                        nulla <br> pariatur.
+                    </p>
+                </div>
+                <div class="food2">
+                    <img src="./img/2.png" alt="食物2">
+                    <h2>Denouncing Pleasure</h2>
+                    <p>Duis aute irure dolor in<br> reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat
+                        nulla <br> pariatur.
+                    </p>
+                </div>
+                <div class="food3">
+                    <img src="./img/3.png" alt="食物3">
+                    <h2>Denouncing Pleasure</h2>
+                    <p>Duis aute irure dolor in<br> reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat
+                        nulla <br> pariatur.
+                    </p>
+                </div>
+                <div class="food3">
+                    <img src="./img/3.png" alt="食物3">
+                    <h2>Denouncing Pleasure</h2>
+                    <p>Duis aute irure dolor in<br> reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat
+                        nulla <br> pariatur.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="button"> <a href="">Read More</a> </div>
+    </div>
+    <section data-x class="discuss">
+        <div class="chapter1 clearfix">
+            <div class="text">
+                <h1>Vel Illum Qui Dolorem <br>Eum</h1>
+                <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque
+                    laudantium, totam rem aperiam, eaque <br> ipsa quae ab illo inventore veritatis et quasi architecto
+                    beatae <br> vitae dicta sunt explicabo.
+                </p>
+                <a href="">Read More</a>
+            </div>
+            <div class="picture-one" style="float:left"><img src="./img/1.jpg" alt="Dolorem">
+                <div class="ProgressBar1">
+                    <div class="Progress1"></div>
+                </div>
+                <div class="ProgressBar2">
+                    <div class="Progress2"></div>
+                </div>
+                <div class="ProgressBar3">
+                    <div class="Progress3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="discuss2 clearfix">
+            <div class="picture">
+                <img src="./img/2.jpg" alt="Excepteur">
+            </div>
+            <div class="text">
+                <h1>Excepteur Sint Occaecat <br> Cupidatat Non Proident</h1>
+                <div class="background"></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor incididunt ut
+                    labore et <br> dolore magna aliqua.Quis autem vel eum iure <br> reprehenderit qui in ea voluptate
+                    velit esse quam nihil <br> molestiae
+                    consequatur.
+                </p>
+                <div class="button"><a href="">Read More</a></div>
+            </div>
+        </div>
+    </section>
+    <div class="banner2"></div>
+    <div data-x class="submit">
+        <div class="letter">
+            <h1>Newsletter</h1>
+            <p>
+                But who has any right to find fault with a man who chooses to enjoy a <br> pleasure that has no annoying
+                consequences
+            </p>
+        </div>
+        <div class="emall">
+            <form action="" method="POST">
+                <input type="emall text" id="emall" placeholder="Enter your emall">
+                <input type="submit" value="send" id="submit">
+            </form>
+        </div>
+    </div>
+    <section data-x class="about-food">
+        <div class="Hamburger clearfix">
+            <div class="Hbtext">
+                <h1>At Vero Eos Et Accusamus Et <br> Iusto Odio
+                </h1>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <br> doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore <br> veritatis et quasi architecto
+                    beatae vitae dicta sunt explicabo.
+                </p>
+                <div class="button"><a href="" target="_self">Read More</a></div>
+            </div>
+            <div class="Hb"> <img src="./img/4.jpg" alt="HamburgerPic"> </div>
+        </div>
+        <div class="pizza clearfix">
+            <div class="pz"> <img src="./img/5.jpg" alt="pizzaPic"> </div>
+            <div class="pztext">
+                <h1>At Vero Eos Et Accusamus Et <br> Iusto Odio
+                </h1>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <br> doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore <br> veritatis et quasi architecto
+                    beatae vitae dicta sunt explicabo.
+                </p>
+                <div class="button"><a href="" target="_self">Read More</a></div>
+            </div>
+    </section>
+    <div class="banner-background"></div>
+    <div data-x class="display clearfix">
+        <div class="chef">
+            <h2>Cumque Nihil <br> Impedit
+            </h2>
+            <div class="mypicture">
+                <img src="./img/6.jpg" alt="me">
+            </div>
+            <p>
+                Nam libero tempore, cum soluta <br> nobis est eligendi optio cumque nihil <br> impedit quo minus id quod
+                maxime <br> placeat facere possimus, omnis <br> voluptas assumenda est, omnis dolor <br> repellendus
+            </p>
+        </div>
+        <div class="carte">
+            <h2>Voluptas <br> Assumenda
+            </h2>
+            <ol>
+                <li><a href="">Doloribus Asperiores</a></li>
+                <li><a href="">Itaque Earum Rerum</a></li>
+                <li><a href="">Deserunt Mollitia</a></li>
+                <li><a href="">Facilis Est Et Expedita</a></li>
+                <li><a href="">Occaecati Cupiditate</a></li>
+                <li><a href="">Deserunt Mollitia Laborum</a></li>
+            </ol>
+        </div>
+        <div class="carte">
+            <h2>Deserunt Mollitia</h2>
+            <ol>
+                <li><a href="">Doloribus Asperiores</a></li>
+                <li><a href="">Itaque Earum Rerum</a></li>
+                <li><a href="">Deserunt Mollitia</a></li>
+                <li><a href="">Facilis Est Et Expedita</a></li>
+                <li><a href="">Occaecati Cupiditate</a></li>
+                <li><a href="">Deserunt Mollitia Laborum</a></li>
+            </ol>
+        </div>
+        <div class="pic-display">
+            <h2>Flickr Posts</h2>
+            <div class="foodPic">
+                <div class="top">
+                    <div class="pic1">
+                        <a href=""><img src="./img/7.jpg" alt=""></a>
+                    </div>
+                    <div class="pic1">
+                        <a href=""><img src="./img/8.jpg" alt=""></a>
+                    </div>
+                    <div class="pic1">
+                        <a href=""><img src="./img/7.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="pic1">
+                        <a href=""><img src="./img/8.jpg" alt=""></a>
+                    </div>
+                    <div class="pic1">
+                        <a href=""><img src="./img/7.jpg" alt=""></a>
+                    </div>
+                    <div class="pic1">
+                        <a href=""><img src="./img/8.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

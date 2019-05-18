@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: white;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+.button a {
+    padding: 0px 40px;
+    line-height: 39px;
+    background-color: rgb(172, 145, 90);
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.Top-NavBar {
+    background-color: rgb(29, 24, 17);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    transition: all 1s;
+}
+.Top-NavBar.active{
+    background: transparent;
+    transition: all 1s;
+}
+
+.Top-NavBar nav {
+    float: left;
+    padding: 30px    30px;
+    margin-left: 50px;
+} 
+
+.Top-NavBar nav li {
+    float: left;
+    margin: 0px 20px;
+}
+
+
+
+.Top-NavBar .contact a {
+    float: left;
+    border: 2px white solid;
+    line-height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.Top-NavBar .contact {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.Top-NavBar .logo{
+    float: left;
+    position: absolute;
+    left: 200px;
+}
+.Top-NavBar .logo a {
+    font-size: 50px;
+}
+.Top-NavBar nav li{
+    position: relative;
+}
+
+.Top-NavBar nav li a:hover {
+    color: rgb(248, 148, 6);
+    transition: 0.5s;
+}
+
+.Top-NavBar nav li a.nihaoya::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: rgb(248, 148, 6);
+    top: 100%;
+    left: 0;
+    border-radius: 3px;
+}
+
+.Top-NavBar .contact a:hover {
+    border: rgb(248, 148, 6) 2px solid;
+    transition: 0.5s;
+}
+
+
+
+/* *********************************** */
+.banner {
+    background-image: url(./img/banner.jpg);
+    height: 810px;
+    background-size: cover;
+}
+
+
+.Scrolling-Menu {
+    text-align: center;
+    background-color: transparent;
+    margin-top: -730px;
+}
+
+
+
+.Scrolling-Menu h1 {
+    font-size: 3em;
+}
+
+.title-text{
+    animation: b 0.7s linear;
+    margin-top: 30px;
+}
+
+@keyframes b {
+    0% {
+        transform: translateX(-500px)
+    }
+    100% {
+        transform: translatex(0)
+    }
+}
+
+.Scrolling-Menu p {
+    margin-bottom: 60px;
+}
+
+.food-list {
+    display: inline-block;
+    margin-top: 30px;
+    animation: a 0.75s linear;
+    position: relative;
+}
+
+
+.food-list>.images{
+    display: inline-flex;
+    
+}
+
+
+.Scrolling-Menu a {
+    display: inline-block;
+    margin: 0px 30px 14px 30px;
+    line-height: 39px;
+    background-color: rgb(172, 145, 90);
+    padding: 0px 40px;
+}
+
+.discuss {
+    background: white;
+    color: rgb(153, 153, 153);
+    margin-bottom: 100px;
+    text-align: center;
+    margin-top: 85px;
+}
+
+.chapter1>.text,
+.chapter1>.picture-one {
+    float: left;
+}
+
+.chapter1 {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.chapter1>.picture-one {
+    margin-left: 117px;
+    position: relative;
+}
+
+.chapter1>.text h1 {
+    color: rgb(233, 133, 45);
+    font-size: 40px;
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+.chapter1>.text {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.chapter1>.text p {
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-top: 15px;
+}
+
+.chapter1>.text>a {
+    display: inline-block;
+    line-height: 39px;
+    padding: 0px 40px;
+    margin-top: 60px;
+    background-color: rgb(172, 145, 90);
+    color: white;
+}
+
+.ProgressBar1,
+.ProgressBar2,
+.ProgressBar3 {
+    height: 4px;
+    width: 266px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+}
+
+.ProgressBar1>.Progress1 {
+    height: 100%;
+    background-color: rgb(29, 24, 17);
+    width: 30%;
+    border-radius: 3px 0 0 3px;
+}
+
+.ProgressBar2>.Progress2 {
+    height: 100%;
+    background-color: rgb(29, 24, 17);
+    width: 20%;
+    border-radius: 3px 0 0 3px;
+}
+
+.ProgressBar3>.Progress3 {
+    height: 100%;
+    background-color: rgb(29, 24, 17);
+    width: 30%;
+    border-radius: 3px 0 0 3px;
+}
+
+.ProgressBar1 {
+    position: absolute;
+    left: -79px;
+    bottom: 112px;
+}
+
+.ProgressBar2 {
+    position: absolute;
+    left: -53px;
+    bottom: 81px;
+}
+
+.ProgressBar3 {
+    position: absolute;
+    left: -79px;
+    bottom: 50px;
+}
+
+.discuss2 .picture,
+.discuss2 .text {
+    float: left;
+}
+
+.discuss2 {
+    padding-left: 224px;
+}
+
+.discuss2 .text {
+    line-height: 1.5em;
+    margin-top: 40px;
+    position: relative;
+}
+
+.discuss2 .text h1 {
+    color: rgb(29, 24, 17);
+    line-height: 1.5em;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-left: 359px
+}
+
+.discuss2 .text p {
+    text-align: left;
+    font-size: 14px;
+    position: absolute;
+    left: 83px;
+    bottom: -54px;
+    background-color: #fff;
+    background-color: transparent;
+}
+
+.discuss2 .text .button {
+    text-align: left;
+}
+
+.discuss2 .text .background {
+    height: 150px;
+    width: 445px;
+    background-color: rgb(243, 243, 243);
+}
+
+.discuss2 .picture {
+    margin-top: 46px;
+}
+
+.discuss2 .text .button>a {
+    position: absolute;
+    left: 80px;
+    bottom: -146px;
+    color: #fff;
+}
+
+.banner2 {
+    background-image: url(./img/background.jpg);
+    height: 500px;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.submit {
+    text-align: center;
+    margin-top: -395px;
+}
+
+.submit .letter {
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+.submit .letter h1 {
+    line-height: 1.7em;
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+.submit .letter p {
+    font-size: 14px;
+    color: rgb(210, 208, 206);
+}
+
+#emall {
+    border: none;
+    outline: none;
+    ;
+    background: #fff;
+    font-size: 14px;
+    color: #1d1811;
+    width: 38%;
+    line-height: 38px;
+    font-size: 16px;
+    text-indent: 1em;
+}
+
+#submit {
+    padding: 0 58px;
+    background-color: rgb(233, 133, 45);
+    border: none;
+    font-size: 18px;
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+.submit .emall {
+    margin-top: 50px;
+}
+
+.about-food .Hamburger .Hbtext,
+.about-food .Hamburger .Hb {
+    float: left;
+}
+
+.about-food {
+    margin-top: 215px;
+    margin-left: 200px;
+    padding-bottom: 70px
+}
+
+.about-food .Hamburger .Hbtext h1,
+.about-food .pizza .pztext h1 {
+    line-height: 1.5em;
+    font-size: 41px;
+    color: rgb(233, 133, 45);
+    font-weight: 300;
+    margin-bottom: 33px;
+}
+
+.about-food .Hamburger .Hbtext {
+    margin-right: 120px;
+}
+
+.about-food .Hamburger .Hbtext p,
+.about-food .pizza .pztext p {
+    line-height: 1.8em;
+    font-size: 14px;
+    color: rgb(157, 157, 157)
+}
+
+.about-food .Hamburger .Hb {
+    margin-top: 15px;
+}
+
+.about-food .Hamburger>.Hbtext>.button a,
+.about-food .pizza>.pztext>.button a {
+    display: inline-block;
+}
+
+.about-food .Hamburger>.Hbtext>.button,
+.about-food .pizza>.pztext>.button {
+    margin-top: 45px;
+}
+
+.about-food .pizza .pztext,
+.about-food .pizza .pz {
+    float: left;
+}
+
+.about-food .pizza .pztext {
+    margin-left: 100px;
+}
+
+.about-food .pizza {
+    margin-left: 65px;
+    margin-top: 50px;
+}
+
+.display>.chef,
+.display>.carte,
+.display>.pic-display {
+    float: left;
+}
+
+.pic-display .foodPic img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.pic-display .foodPic .pic1 {
+    width: 75px;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+.display {
+    margin: -480px 0 100px 200px;
+}
+
+.display>.chef>h2 {
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.display>.chef .mypicture>img {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.display>.chef .mypicture {
+    width: 260px;
+}
+
+.display>.chef p {
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-top: 13px;
+    color: rgb(127, 127, 127);
+}
+
+.display>.carte li {
+    border-bottom: rgb(127, 127, 127) 1px dotted;
+    font-size: 14px;
+    padding: 15px 57px 18px 21px;
+    color: rgb(127, 127, 127);
+}
+
+.display>.carte li>a:hover {
+    color: #fff;
+}
+
+.display>.carte {
+    margin-left: 30px;
+}
+
+.display>.pic-display {
+    margin-left: 30px;
+}
+
+.display>.carte h2 {
+    margin-bottom: 15px;
+}
+
+.display>.pic-display h2 {
+    margin-bottom: 34px;
+}
+
+.banner-background {
+    background-color: rgb(40, 40, 40);
+    height: 551px;
+    max-width: 100%;
+}
