@@ -118,8 +118,8 @@ ol li {
 
 /* *********************************** */
 .banner {
-    background-image: url(./img/banner.jpg);
-    height: 810px;
+    background: gray url(/img/banner.jpg) no-repeat center center;
+    min-height: 800px;
     background-size: cover;
 }
 
@@ -162,10 +162,7 @@ ol li {
 }
 
 
-.food-list>.images{
-    display: inline-flex;
-    
-}
+
 
 
 .Scrolling-Menu a {
@@ -175,6 +172,9 @@ ol li {
     background-color: rgb(172, 145, 90);
     padding: 0px 40px;
 }
+
+
+
 
 .discuss {
     background: white;
@@ -329,10 +329,9 @@ ol li {
 }
 
 .banner2 {
-    background-image: url(./img/background.jpg);
+    background: grey url(/img/background.jpg) no-repeat center center;
     height: 500px;
     max-width: 100%;
-    background-size: cover;
 }
 
 .submit {
